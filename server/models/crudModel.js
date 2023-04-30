@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose, {model} from 'mongoose';
 
 const crudSchema = new mongoose.Schema({
 	companyName: {
@@ -32,4 +32,4 @@ const crudSchema = new mongoose.Schema({
 	},
 });
 
-module.exports = mongoose.model("Crud", crudSchema, "Cruds");
+export default model("Crud", crudSchema, "Cruds");
