@@ -1,4 +1,4 @@
-import Crud from '../models/crudModel';
+import Crud from '../models/crudModel.js';
 
 // Display All CRUD Data
 const crud_index = (req, res) => {
