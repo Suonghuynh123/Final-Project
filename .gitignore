@@ -132,3 +132,4 @@ dist
 # Intellij
 *.idea/
 
+node_modules
