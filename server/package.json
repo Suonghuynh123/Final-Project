@@ -5,13 +5,16 @@
 	"email": "jackbalageru@yahoo.com",
 	"description": "",
 	"main": "index.js",
+	"type": "module",
 	"dependencies": {
 		"axios": "^0.26.0",
 		"cors": "^2.8.5",
 		"dotenv": "^16.0.0",
 		"express": "^4.17.3",
+		"jest": "^29.5.0",
 		"mongoose": "^6.2.4",
-		"nodemon": "^2.0.15"
+		"nodemon": "^2.0.15",
+		"supertest": "^6.3.3"
 	},
 	"scripts": {
 		"test": "jest"

@@ -1,4 +1,4 @@
-const Crud = require("../models/crudModel");
+import Crud from '../models/crudModel.js';
 
 // Display All CRUD Data
 const crud_index = (req, res) => {
@@ -59,7 +59,8 @@ const crud_delete = (req, res) => {
 	});
 };
 
-module.exports = {
+
+export default {
 	crud_index,
 	crud_details,
 	crud_create_post,
