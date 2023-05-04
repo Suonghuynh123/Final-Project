@@ -11,9 +11,7 @@ describe("CRUD API", () => {
     var crudId;
     var testCompanyName;
     var uuid;
-    // beforeAll(async () => {
-    //     await mongoose.connect(process.env.__MONGO_URI__);
-    // });
+
     afterAll(async () => {
         await mongoose.connection.close();
     });
