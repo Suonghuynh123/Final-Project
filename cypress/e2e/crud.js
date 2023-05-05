@@ -14,6 +14,7 @@ describe('Create New Crud', () => {
             'We serve the financial needs of our Australian, New Zealand and global customers.')
 
         // Intercept HTTP requests to a specific URL and alias it as "myXHR"
+        //https://docs.cypress.io/api/commands/intercept
         cy.intercept('POST', 'http://localhost:3000/api/cruds').as('myXHR')
 
         // Chain several commands to locate and click an element with ".btn-primary" class,
@@ -74,7 +75,7 @@ describe('Create New Crud', () => {
     })
 })
 
-describe('View Crud', () => {
+describe('Crud Operations', () => {
     beforeEach(() => {
         cy.visit('http://localhost:3000/cruds')
     })
